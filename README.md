@@ -2,6 +2,8 @@
 
 <!-- 环境配置开始 -->
 
+## 一、环境配置
+
 1.下载安装 vs code 代码编辑器 <https://code.visualstudio.com/>
 
 2.打开 vscode 扩展界面搜索 Prettier，安装 Prettier - Code formatter 插件
