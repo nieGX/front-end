@@ -5,6 +5,7 @@
 1.下载安装 vs code 代码编辑器 <https://code.visualstudio.com/>
 
 2.打开 vscode 扩展界面搜索 Prettier，安装 Prettier - Code formatter 插件
+
 打开 vscode 设置：
 2.1：搜索栏输入 default formatter，选择 Prettier - Code formatter 为默认格式化程序
 2.2：搜索栏输入 formatter on save，勾选保存时格式化文件
