@@ -20,4 +20,12 @@
 
 4.点击设置选择文件图标主题为 vscode great icons
 
+5.打开扩展搜索 image preview 并安装插件，可预览 img 标签图片
+
+6.打开扩展搜索 color highlight 并安装插件，可视化编写的 css 颜色样式
+
+7.打开扩展搜索 auto rename tag 并安装插件，当修改标签名时，闭合标签也能自动修改
+
+8.打开扩展搜索 live server 并安装插件，vscode 底部出现 Go Live 标签，点击可启用一个本地网络服务，用该服务打开开发中的网页有热更新效果
+
 <!-- 环境配置结束 -->
