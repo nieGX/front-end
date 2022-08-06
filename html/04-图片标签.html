@@ -1,0 +1,39 @@
+<!-- 首先声明 doctype 告诉浏览器使用HTML5规范解析此文档-->
+<!DOCTYPE html>
+
+<!-- 网页根元素 lang属性表示网页使用的国家语言-->
+<html lang="zh-CN">
+  <!-- 根元素内部一般有 head标签 和 body标签 -->
+
+  <!-- head标签不会在网页中显示，一般用来定义浏览器的行为或链接外部css或者js等文件 -->
+  <head>
+    <!-- meta标签表示元数据：数据的数据 -->
+    <!-- 指定网页字符集 为UTF-8，包含了世界上所有字符 -->
+    <meta charset="UTF-8" />
+    <!-- 浏览器标签栏中显示的标题 -->
+    <title>The Basic Language of the Web:HTML</title>
+  </head>
+
+  <!-- body标签包裹正文内容，浏览器可见部分都定义在body内 -->
+  <body>
+    <!-- 图片标签 img -->
+    <img
+      width="500"
+      src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.zhimg.com%2Fv2-f58f8e789acec382ca3fc9f9b74500a2_r.jpg%3Fsource%3D12a79843&refer=http%3A%2F%2Fpic1.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1662366794&t=f14db50b2238cec8e9ed9b671c11a50e"
+      alt="小猫猫"
+    />
+    <h1>图片标签 img</h1>
+    <ul>
+      <li>img单标签元素，没有闭合标签，只需要在“>”前面加斜线"/>"</li>
+      <li>
+        单标签元素一般用元素的属性来表示元素的数据和行为，元素属性一般是键值对形式，属性名称="属性值"
+      </li>
+      <li>
+        src表示图片文件来源，alt表示图片描述，填写alt属性有助于搜索引擎获取图片描述和网页阅读器读出图片内容，并且当图片无法显示时会显示alt文本
+      </li>
+      <li>
+        width表示图片宽度，height表示图片高度，只设置一个大小，另一边会自动缩放，可以保持图片的纵横比
+      </li>
+    </ul>
+  </body>
+</html>

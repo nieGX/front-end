@@ -1,0 +1,54 @@
+<!-- 首先声明 doctype 告诉浏览器使用HTML5规范解析此文档-->
+<!DOCTYPE html>
+
+<!-- 网页根元素 lang属性表示网页使用的国家语言-->
+<html lang="en">
+  <!-- 根元素内部一般有 head标签 和 body标签 -->
+
+  <!-- head标签不会在网页中显示，一般用来定义浏览器的行为或链接外部css或者js等文件 -->
+  <head>
+    <!-- meta标签表示元数据：数据的数据 -->
+    <!-- 指定网页字符集 为UTF-8，包含了世界上所有字符 -->
+    <meta charset="UTF-8" />
+    <!-- 浏览器标签栏中显示的标题 -->
+    <title>The Basic Language of the Web:HTML</title>
+  </head>
+
+  <!-- body标签包裹正文内容，浏览器可见部分都定义在body内 -->
+  <body>
+    <h1>超链接标签（锚点）a</h1>
+    <p>
+      你可以学习更多关于HTML的知识，请点击
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        target="_blank"
+        >MDN Web Docs</a
+      >
+    </p>
+    <a href="04-图片标签.html">小猫猫</a>
+    <p><a href="#heading">跳转到锚点标题</a></p>
+    <p><a href="javascript:;">不跳转</a></p>
+    <p><a>如果不指定href属性，a标签只是文本，不是超链接</a></p>
+
+    <ul style="height: 1000px">
+      <li>
+        超链接标签分为两类：
+        <ol>
+          <li>外部链接，跳转到其它互联网网站，在href属性指定网站的完整URL</li>
+          <li>
+            内部链接，跳转到本网站的另一个html页面，在href属性指定网页文件的路径
+          </li>
+        </ol>
+      </li>
+      <li>href 属性指定网页的来源，完整URL或者html文件路径</li>
+      <li>
+        target 属性指定打开新网页的方式，_blank表示让浏览器新开一个窗口打开网页
+      </li>
+      <li>
+        当href属性指定为其它元素的id时，a标签将作为锚点使用，点击立即跳转到对应id元素的位置
+      </li>
+    </ul>
+
+    <h2 id="heading">锚点标题</h2>
+  </body>
+</html>
