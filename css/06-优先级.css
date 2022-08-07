@@ -1,0 +1,39 @@
+/* 当存在多个相同的样式属性都命中同一个元素的时候： */
+/* 称为样式冲突，CSS根据权重优先级来选择应用的样式 */
+
+/* 权重优先级从高到低： */
+
+/* !important 关键字 */
+section p {
+    font-size: 30px;
+    color: orange !important;
+}
+
+/* 内联样式，元素属性中的style */
+
+/* id选择器（1,0,1） */
+#box p {
+    color: deeppink;
+}
+
+/* class选择器（0,1,1） */
+.box p {
+    color: skyblue;
+    font-style: normal;
+}
+
+.block p {
+    color: blanchedalmond;
+}
+
+/* 标签选择器（0,0,2） */
+section p {
+    color: aqua;
+}
+
+/* *通配符选择器最低 */
+/* 继承而来的样式也没有优先级 */
+
+/* 排除!important和内联样式的情况下： */
+/* 权重可以累加，但不会进制，所以id权重位是最高位，最优先 */
+/* 权重相同时，越靠后的样式越优先 */

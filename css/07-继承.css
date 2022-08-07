@@ -1,0 +1,19 @@
+/* 可继承的样式一般都是文本样式，或者不涉及到改变盒模型的样式属性 */
+/* 在父元素中声明的可继承样式，会应用到父元素下的所有元素 */
+
+body {
+    /* 可继承样式 */
+    font-family: sans-serif;
+    color: red;
+    font-size: 22px;
+    text-align: center;
+
+    /* 不可以继承的样式 */
+    border: 10px solid black;
+}
+
+/* 通配符选择器表示选中所有元素 */
+* {
+    /* 在此声明的任何属性都不会继承 */
+    color: blue;
+}

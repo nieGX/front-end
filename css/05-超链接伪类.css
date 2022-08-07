@@ -1,0 +1,29 @@
+/* 超链接伪类样式 */
+/* 总是以LVHA这个顺序来定义 */
+
+a:link {
+    /* 表示选择具有href属性的a标签 */
+    color: blue;
+    /* 去除下划线 */
+    text-decoration: none;
+}
+
+a:visited {
+    /* 表示选择被点击过的a标签 */
+    color: red;
+}
+
+a:hover {
+    /* 表示选择鼠标悬停的a标签 */
+    color: pink;
+    text-decoration: overline dotted pink;
+
+}
+
+a:active {
+    /* 表示当鼠标点击时的a标签 */
+    background-color: black;
+    color: rgb(255, 255, 0);
+    text-decoration: underline wavy yellow;
+    font-style: italic;
+}

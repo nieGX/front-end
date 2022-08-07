@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width,initial-scale=1" />
+    <title>Cascading Style Sheets</title>
+
+    <!-- 内部样式 -->
+    <style>
+      h1 {
+        color: #ff0000;
+      }
+      ul li:nth-child(2) {
+        color: #0000ff;
+      }
+    </style>
+
+    <!-- 链接外部样式文件 -->
+    <link href="01-style.css" rel="stylesheet" />
+    <link href="02-文本样式.css" rel="stylesheet" />
+    <link href="06-优先级.css" rel="stylesheet" />
+    <link href="07-继承.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Cascading Style Sheets：层叠样式表</h1>
+    <ul>
+      <li style="color: #00ff00">内联样式</li>
+      <li>内部样式</li>
+      <li>外部样式</li>
+    </ul>
+
+    <p>样式优先级：</p>
+    <ol>
+      <li>!important样式最高</li>
+      <li>内联样式次之</li>
+      <li>权重最高优先</li>
+      <li>权重相等，就近原则</li>
+    </ol>
+
+    <section id="box" class="box block">
+      <p style="color: green">CSS优先级</p>
+    </section>
+  </body>
+</html>

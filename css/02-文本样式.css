@@ -1,0 +1,18 @@
+body {
+    /* 字体大小，浏览器默认16px */
+    font-size: 22px;
+    /* 无衬线字体，注意应该选择所有计算机系统都预装的字体或者使用服务器中的自定义字体文件 */
+    font-family: sans-serif;
+    /* 字母转换，中文一般用不到 */
+    text-transform: uppercase;
+    /* 行高，相对于字体大小的几倍 */
+    line-height: 1.5;
+    /* 文本对齐，相对于父元素对齐 */
+    text-align: center;
+    /* 字体样式，斜体 */
+    font-style: italic;
+    /* 字体加粗 */
+    font-weight: 700;
+    /* 字体颜色 */
+    color: black;
+}

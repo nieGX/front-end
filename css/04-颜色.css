@@ -1,0 +1,26 @@
+/* 1.rgb模型 红绿蓝三原色可组合出所有颜色 */
+body {
+    color: rgb(255, 255, 255);
+    /* rgb模型 16进制表示 */
+    background-color: #ffffff;
+}
+
+/* 2.透明的颜色rgba */
+main {
+    /* 0完全透明 - 1完全不透明 */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 3.字面颜色 */
+artical {
+    color: pink;
+}
+
+
+.box {
+    /* 边框简写属性，border-weight|border-style|border=color */
+    border: 5px solid black;
+    /* 也可以分别设置每条边 */
+    border-top: 5px dashed red;
+    border-left: 5px dotted green;
+}
