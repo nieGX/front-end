@@ -36,3 +36,13 @@ span:nth-child(an+b) {
 
     /* odd表示奇数位置span，even表示偶数位置span */
 }
+
+/* 6.相邻选择器 +符号 */
+button+button {
+    /* 表示选中button元素的下一个button元素 */
+}
+
+/* 7.子代选择器 >符号 */
+body>p {
+    /* 表示选中body下一级的所有p元素，不含孙子级的p元素 */
+}

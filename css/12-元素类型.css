@@ -1,0 +1,52 @@
+/* 1.块级元素：display:block; */
+/* 
+    header
+    main
+    article
+    section
+    aside
+    address
+    footer
+    nav
+    div
+    p
+    ol
+    ul
+    li
+    dl
+    form
+    table
+    h1~h6
+    ...
+
+    块级元素通常占据父元素宽度的100%，
+    块级元素是垂直排列，自动换行
+*/
+
+
+/* 2.行内元素：display:inline; */
+/* 
+    span
+    a
+    strong
+    em
+    ...
+
+    行内元素是水平排列
+    行内元素对某些盒模型属性不起作用
+    例如不能通过width和height设置元素content大小
+    padding，border，margin不会创建垂直空间
+*/
+
+
+/* 3.行内块元素：display:inline-block; */
+/* 
+    img
+    button
+    input
+    select
+    ...
+
+    像行内元素一样排列
+    但和块级元素一样可以设置所有盒模型属性
+*/

@@ -1,0 +1,8 @@
+/* 用一个父元素将网页内容全包裹住 */
+/* 父元素container */
+.container {
+    /* 给父元素一个确定的width */
+    width: 800px;
+    /* 设置margin左右自动计算 */
+    margin: 0 auto;
+}

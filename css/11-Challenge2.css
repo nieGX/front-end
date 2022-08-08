@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 0;
+}
+
+header {
+    background-color: transparent;
+    text-align: unset;
+}
+
+footer {
+    padding: 12px;
+}
+
+ul {
+    margin-left: 22px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+/* 内容居中 */
+.container {
+    width: 800px;
+    margin: 50px auto;
+    border: 5px solid black;
+}
+
+/* 商品标题 */
+.shop-title {
+    background-color: #f7f7f7;
+    padding: 16px 0;
+    text-align: center;
+}
+
+/* 购物车按钮 */
+.shopcar-btn {
+    width: 100%;
+    padding: 12px 0;
+    border-top: 5px solid black;
+}
+
+/* 底部外边距 */
+.margin-bottom-size {
+    margin-bottom: 16px;
+}

@@ -1,0 +1,56 @@
+/* css盒模型 box model */
+
+/* 盒模型组成 */
+/* 1.content 内容区域 */
+/* 2.padding 填充区域 */
+/* 3.border 边框区域 */
+/* 4.margin 外边距区域 */
+
+
+.box-model {
+    /* 设置content大小 */
+    width: 200px;
+    height: 100px;
+
+    /* 设置padding大小 top|right|bottom|left*/
+    padding: 20px;
+    /* top|bottom=20，left|right=10 */
+    padding: 20px 10px;
+
+    /* 设置border大小 */
+    border: 5px solid black;
+
+    /* 设置margin大小，方向和padding一样 */
+    margin: 10px;
+    margin: 20px 10px;
+}
+
+/* 盒模型大小计算规则： */
+/* 元素实际width = border-left + padding-left + content-width + padding-right + border-right */
+/* 元素实际height = border-top + padding-top + content-height + padding-bottom + border-bottom */
+
+/* 以上是标准盒模型，也就是css默认的盒模型 */
+
+
+/* 怪异盒模型（IE盒模型） */
+.ie-box-model {
+    /* box-sizing属性可以修改盒模型 */
+    /* border-box为ie盒模型 | content-box为标准盒模型，也是默认值 */
+    box-sizing: border-box;
+
+    /* 元素实际大小*/
+    width: 500px;
+    height: 300px;
+
+    padding: 10px;
+    border: 10px solid green;
+    margin: 20px;
+}
+
+/* 怪异盒模型大小计算规则 */
+/* 元素实际width = css设置的width属性值，border-left|right,padding-left|right会自动挤压content-width */
+/* 元素实际height = css设置的height属性值，border-top|bottom,padding-top|bottom会自动挤压content-height */
+
+
+/* 块级元素完全按照盒模型规则渲染 */
+/* 行内元素不能通过width和height属性设置content大小，margin,padding,border也不会占据任何垂直空间top|bottom */

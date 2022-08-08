@@ -1,0 +1,70 @@
+/* 网页文档中每个元素都按照默认的位置排列，叫正常流或标准流 */
+
+/* position属性允许我们修改元素的定位位置，使元素脱离标准流，在网页文档任意位置出现 */
+/* 
+    1.static,默认值，标准流
+    2.relative,相对定位，标准流
+    3.absolute,绝对定位，脱离标准流
+    4.fixed,固定定位，脱离标准流
+    5.sticky,粘性定位，标准流
+*/
+
+/* 父元素 */
+.position-demo {
+    height: 500px;
+    background-color: blanchedalmond;
+    position: relative;
+}
+
+.position-demo div {
+    width: 120px;
+    height: 100px;
+}
+
+/* 默认静态定位 */
+.static-place {
+    background-color: aqua;
+    position: static;
+}
+
+/* 相对定位 */
+.relative-place {
+    background-color: blueviolet;
+    /* 相对元素在标准流中的位置来偏移，标准流的位置仍然保留着 */
+    position: relative;
+    /* top: 0; */
+    bottom: 25px;
+    left: 100px;
+    /* right: 0; */
+}
+
+/* 绝对定位 */
+.absolute-place {
+    background-color: brown;
+    /* 相对于position值非static的最近父元素开始偏移，脱离标准流 */
+    position: absolute;
+    top: 250px;
+    /* bottom: 0; */
+    /* left: 0; */
+    right: 0;
+
+}
+
+/* 固定定位 */
+.fixed-place {
+    background-color: chocolate;
+    /* 固定在网页文档可视区的位置，不会随着网页滚动而滚动，脱离标准流 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* bottom: 0; */
+}
+
+/* 粘性定位 */
+.sticky-place {
+    background-color: darkgreen;
+    /* 相对定位和固定定位的混合体，当满足top或bottom距离就会固定住，但不会脱离标准流位置 */
+    position: sticky;
+    top: 100px;
+
+}

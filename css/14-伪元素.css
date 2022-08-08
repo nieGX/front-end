@@ -1,0 +1,45 @@
+/* 伪元素表示没有在HTML中定义，但可以通过CSS选择到的元素 */
+/* 用双冒号选择伪元素并设置样式，所有伪元素默认是行内元素,可通过display属性修改 */
+
+/* 1. ::first-letter */
+h1::first-letter {
+    /* 选中h1中的第一个英文字母 */
+    font-style: normal;
+    font-size: 60px;
+}
+
+/* 2. ::first-line */
+.fl::first-line {
+    /* 选中fl元素的第一行内容 */
+    color: red;
+}
+
+/* 常用的两个伪元素::before | ::after */
+
+/* 3. ::before */
+h1::before {
+    /* 必须指定content属性，否则元素不可见 */
+    /* content: "HOT"; */
+    background-color: #000;
+    color: red;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    font-size: 16px;
+}
+
+/* 3. ::after */
+h1::after {
+    /* 必须指定content属性，否则元素不可见 */
+    content: "HOT";
+    background-color: #000;
+    color: red;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    font-size: 16px;
+}
+
+h1 {
+    position: relative;
+}
