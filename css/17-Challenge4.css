@@ -1,0 +1,35 @@
+/* 清除浮动 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 内容区域 */
+.container {
+    width: 1200px;
+
+}
+
+/* 左浮动 */
+.float-left {
+    float: left;
+
+
+}
+
+/* 右浮动 */
+.float-right {
+    float: right;
+}
+
+/* 内容中间区域 */
+.container-text {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 20px 0 0 60px;
+}
+
+.special {
+    margin-top: 8px;
+}

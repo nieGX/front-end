@@ -1,0 +1,43 @@
+/* 浮动布局是过时的布局方式，修改float属性让元素浮动起来，脱离标准流 */
+.float-demo {
+    background-color: olive;
+}
+
+.float-demo div:nth-child(1n+2) {
+    background-color: antiquewhite;
+}
+
+/* 浮动可以让块级元素在一行上排列 */
+/* 
+    缺点：
+    1.导致父元素高度坍塌
+    2.未浮动元素会占据浮动元素在网页的位置
+*/
+.float-first {
+    float: left;
+}
+
+.float-thred {
+    float: right;
+}
+
+/* 清除浮动的方法 clear:both;*/
+/* 1.在包含浮动元素的父元素标签最后添加一个空块级标签并设置clear样式属性 */
+
+/* 2.在父元素创建BFC区域*/
+.BFC {
+    /* 非visible属性值即可 */
+    overflow: hidden;
+    /* flow-root | inline-block | flex | grid | table-cell ...*/
+    display: flow-root;
+    /* absolute | flex */
+    position: absolute;
+}
+
+/* 3.推荐使用 clearfix hack */
+.clearfix::after {
+    /* 用伪元素after模拟添加空标签清除浮动 */
+    content: "";
+    display: block;
+    clear: both;
+}

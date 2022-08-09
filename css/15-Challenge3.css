@@ -1,0 +1,57 @@
+/* 大盒子元素 */
+.article-box {
+    position: relative;
+}
+
+/* 热卖标签定位 */
+.article-box::before {
+    content: "热卖";
+    background-color: red;
+    color: white;
+    padding: 6px 18px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* 颜色列表 */
+.shop-color ul {
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.shop-color li {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+}
+
+.shop-color li:nth-child(1) {
+    background-color: black;
+}
+
+.shop-color li:nth-child(2) {
+    background-color: pink;
+}
+
+.shop-color li:nth-child(3) {
+    background-color: darkgray;
+}
+
+.shop-color li:nth-child(4) {
+    background-color: dodgerblue;
+}
+
+.shop-color li:nth-child(5) {
+    background-color: goldenrod;
+}
+
+.shop-color li:nth-child(6) {
+    background-color: brown;
+}
