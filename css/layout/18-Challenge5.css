@@ -1,0 +1,23 @@
+.container {
+    width: 1000px;
+}
+
+/* flex容器 */
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* 价格发货flex容器 */
+.flex-box-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* items */
+.flex-item {
+    flex: 1;
+}

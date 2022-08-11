@@ -1,0 +1,97 @@
+/* 现代网页布局：flex布局 */
+.container {
+    background-color: #777;
+    height: 150px;
+    /* 设置为flex布局，此时元素称为flex容器 */
+    display: flex;
+
+    /* flex容器属性 */
+    /* 1.设置主轴：默认row横向轴 */
+    flex-direction: row;
+    /* 2.设置items超出容器是否换行，默认不换行 */
+    flex-wrap: nowrap;
+    /* 以上属性可简写为flex-flow:row nowrap; */
+    /* flex-flow: row nowrap; */
+    /* 3.设置items在主轴上的对齐位置，默认flex-start */
+    justify-content: center;
+    /* 4.设置items在交叉轴上的对齐位置，默认stretch */
+    align-items: center;
+    /* 5.设置items之间的间隙 */
+    /* gap: 12px; */
+}
+
+.el {
+    font-size: 64px;
+
+    /* 容器下的items属性 */
+    /* 
+        flex-grow:0;
+        flex-shrink:1;
+        flex-basis:auto;
+        以上3个属性可简写为
+        flex:0 1 auto;
+    */
+    /* 简写属性felx：flex-grow:1|flex-shrink:0;|flex-basis:0%; */
+    /* 只填一个值表示永远修改的只是flex-grow */
+    flex: 1;
+    /* items排序 */
+    order: 0;
+    /* 自身item在容器交叉轴上的对齐方式 */
+    /* align-self: stretch; */
+}
+
+.el-1 {
+    background-color: aqua;
+    /* 排到最后 */
+    order: 1;
+}
+
+.el-2 {
+    background-color: brown;
+    /* 不允许自动拉伸 */
+    flex-grow: 0;
+}
+
+.el-3 {
+    background-color: cornflowerblue;
+    /* 交叉轴上拉伸填满 */
+    align-self: stretch;
+}
+
+.el-4 {
+    background-color: darkolivegreen;
+}
+
+.el-5 {
+    background-color: fuchsia;
+    /* 不允许自动收缩 */
+    flex-basis: 50px;
+    flex-shrink: 0;
+
+}
+
+.el-6 {
+    background-color: gold;
+    /* 排在第一 */
+    order: -1;
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.items {}
+
+.flex-left {
+    background-color: lawngreen;
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.flex-right {
+    background-color: rosybrown;
+    flex: 1;
+    align-self: center;
+}
