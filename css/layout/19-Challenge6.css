@@ -1,0 +1,25 @@
+.container {
+    width: 1000px;
+
+}
+
+/* grid容器 */
+.grid-box {
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    column-gap: 60px;
+    align-items: center;
+}
+
+/* 顶部标题和底部按钮跨列 */
+.shop-title,
+.shopcar-btn {
+    grid-column: 1 / -1;
+}
+
+
+.flex-box-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
